@@ -11,7 +11,7 @@ const mockData = {
 const mockDataKeys = mockData.keys();
 
 test('Displays passed object values, once each', () => {
-  render("<Tile display={mockData} />")
+  render(<Tile display={mockData} />)
   for (let i = 0; i < mockDataKeys.length; i++) {
     const expectedText = mockData.mockDataKeys[i]
     expect(getbyText(expectedText)).toBe(true)
