@@ -17,4 +17,6 @@ test("Renders three managed input elements and a submit button", () => {
   expect(screen.getByDisplayValue("Submit")).toBeDefined();
 });
 
-test.todo("Does not accept incorrect phone numbers");
+test("Does not accept incorrect phone numbers", () => {
+  // TODO: Find a way to test this
+});
