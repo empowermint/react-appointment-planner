@@ -10,13 +10,10 @@ test("Renders a form with onSubmit attribute set", () => {
   expect(expectedAttribute).toBeDefined();
 });
 
-test("Renders four managed input elements", () => {
+test("Renders three managed input elements and a submit button", () => {
   const inputs = document.getElementsByTagName("input");
   expect(inputs.length).toBe(4);
   // TODO: Test the inputs are managed
-});
-
-test("Renders a submit button", () => {
   expect(screen.getByDisplayValue("Submit")).toBeDefined();
 });
 
