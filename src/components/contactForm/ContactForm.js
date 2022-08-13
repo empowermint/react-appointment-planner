@@ -14,10 +14,10 @@ export const ContactForm = ({
       <label htmlFor="name">Name: </label>
       <input type="text" name="name" id="name" />
       <label htmlFor="phone">Phone Number: </label>
-      <input type="text" name="phone" id="phone"
+      <input type="tel" name="phone" id="phone"
         pattern="" />
       <label htmlFor="email">Email Address: </label>
-      <input type="text" name="email" id="email" />
+      <input type="email" name="email" id="email" />
       <input type="submit" value="Submit" />
     </form>
   );

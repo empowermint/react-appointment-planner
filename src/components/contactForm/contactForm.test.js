@@ -10,13 +10,9 @@ test("Renders a form with onSubmit attribute set", () => {
   expect(expectedAttribute).toBeDefined();
 });
 
-test("Renders three managed input elements", () => {
+test("Renders four managed input elements", () => {
   const inputs = document.getElementsByTagName("input");
-  let textCount = 0;
-  for (let i = 0; i < inputs.length; i++) {
-    if (inputs[i].type === "text") textCount++;
-  }
-  expect(textCount).toBe(3);
+  expect(inputs.length).toBe(4);
   // TODO: Test the inputs are managed
 });
 
