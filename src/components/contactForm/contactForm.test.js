@@ -1,7 +1,14 @@
 import { render, screen } from "@testing-library/react";
 import { ContactForm } from "./ContactForm";
 
-test.todo("Renders a form with onSubmit attribute set");
+beforeEach(() => render(<ContactForm />));
+
+test("Renders a form with onSubmit attribute set", () => {
+  const forms = document.getElementsByTagName("form");
+  expect(forms.length).toBe(1);
+  const onSubmit = forms[0].getAttribute("onSubmit");
+  expect(onSubmit).toBeDefined;
+});
 
 test.todo("Renders three managed input elements");
 
