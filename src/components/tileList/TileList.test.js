@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
 import { TileList } from "./TileList";
 
 const mockData = [
@@ -17,6 +18,6 @@ test("Passes each object to child Tile component as 'display' prop", () => {
   render(<TileList display={mockData} />);
   for (let i = 0; i < mockData.length; i++) {
     const title = mockData[i].title;
-    expect(screen.getByText(title)).toBeDefined(); // TODO: Stop this test being dependent on <Tile>
+    expect(screen.getByText(title)).toBeInTheDocument();
   }
 });
