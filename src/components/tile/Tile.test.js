@@ -1,4 +1,5 @@
-import { render, getbyText } from "@testing-library/react"
+import { render, screen, getByText } from "@testing-library/react";
+import { Tile } from "./Tile";
 
 const mockData = {
   title: "Mock Appointment",
