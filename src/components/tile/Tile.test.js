@@ -25,4 +25,10 @@ test('Gives first item class "tile-title"', () => {
   expect(expectedRender).toHaveClass("tile-title");
 });
 
-test.todo('Gives non-first items class "tile"')
+test('Gives non-first items class "tile"', () => {
+  render(<Tile display={mockData} />);
+  for (let i = 1; i < mockDataKeys.length; i++) {
+    const expectedText = mockData[mockDataKeys[i]]; 
+    expect(screen.getByText(expectedText)).toHaveClass("tile");
+  }
+})
