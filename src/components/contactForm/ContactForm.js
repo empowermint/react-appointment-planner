@@ -12,12 +12,13 @@ export const ContactForm = ({
   return (
     <form onSubmit={handleSubmit}> 
       <label htmlFor="name">Name: </label>
-      <input name="name" id="name"></input>
+      <input type="text" name="name" id="name" />
       <label htmlFor="phone">Phone Number: </label>
-      <input name="phone" id="phone"></input>
+      <input type="text" name="phone" id="phone"
+        pattern="" />
       <label htmlFor="email">Email Address: </label>
-      <input name="email" id="email"></input>
-      <submit />
+      <input type="text" name="email" id="email" />
+      <input type="submit" value="Submit" />
     </form>
   );
 };

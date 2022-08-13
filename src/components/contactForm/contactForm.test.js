@@ -12,13 +12,16 @@ test("Renders a form with onSubmit attribute set", () => {
 
 test("Renders three managed input elements", () => {
   const inputs = document.getElementsByTagName("input");
-  expect(inputs.length).toBe(3);
+  let textCount = 0;
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].type === "text") textCount++;
+  }
+  expect(textCount).toBe(3);
   // TODO: Test the inputs are managed
 });
 
 test("Renders a submit button", () => {
-  const submits = document.getElementsByTagName("submit");
-  expect(submits.length).toBe(1);
+  expect(screen.getByDisplayValue("Submit")).toBeDefined();
 });
 
 test.todo("Does not accept incorrect phone numbers");
