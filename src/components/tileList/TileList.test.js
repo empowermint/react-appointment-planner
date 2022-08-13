@@ -1,7 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { TileList } from "./TileList";
-import { AppointmentsPage } from "../../containers/appointmentsPage/AppointmentsPage";
 
 const mockData = [
   {title: "Mock Turtles", description: "Summit meeting with the mock turles"},
@@ -9,6 +8,10 @@ const mockData = [
   {title: "Dinner", description: "Turtle soup on the menu?"}
 ]
 
-test.todo('Renders a Tile component for each object in recieved array');
+test("Renders a Tile component for each object in recieved array", () => {
+  render(<TileList display={mockData} />);
+  const tiles = document.getElementsByTagName("li");
+  expect(tiles.length).toEqual(mockData.length);
+});
 
-test.todo('Passes each object to Tile component');
+test.todo("Passes each object to child Tile component as 'display' prop");

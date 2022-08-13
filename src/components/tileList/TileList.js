@@ -1,9 +1,16 @@
 import React from "react";
+import { Tile } from "../tile/Tile";
 
-export const TileList = () => {
+export const TileList = ({ display }) => {
   return (
-    <div>
-      
-    </div>
+    <ul>
+      {display.map((value, i) => {
+        return (
+          <li key={i + Date.now()}>
+            <Tile display={value} />
+          </li>
+        )
+      })}
+    </ul>
   );
 };
