@@ -54,7 +54,7 @@ Based on the given requirements, implement TileList as a stateless component tha
   - An array of objects to render as a list
 - Use the array passed via props to iteratively render Tile components, passing each object in the array as a prop to each rendered Tile component
 
-### Tile Requirements
+### Tile Requirements (Implemented 2022.08.13)
 
 - Receive one prop:
   - An object
