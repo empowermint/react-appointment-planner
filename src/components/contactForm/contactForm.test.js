@@ -16,6 +16,9 @@ test("Renders three managed input elements", () => {
   // TODO: Test the inputs are managed
 });
 
-test.todo("Renders a submit button");
+test("Renders a submit button", () => {
+  const submits = document.getElementsByTagName("submit");
+  expect(submits.length).toBe(1);
+});
 
 test.todo("Does not accept incorrect phone numbers");

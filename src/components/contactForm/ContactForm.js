@@ -17,6 +17,7 @@ export const ContactForm = ({
       <input name="phone" id="phone"></input>
       <label htmlFor="email">Email Address: </label>
       <input name="email" id="email"></input>
+      <submit />
     </form>
   );
 };
