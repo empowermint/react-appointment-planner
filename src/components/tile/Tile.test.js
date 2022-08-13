@@ -1,4 +1,5 @@
-import { render, screen, getByText } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
 import { Tile } from "./Tile";
 
 const mockData = {
@@ -18,6 +19,10 @@ test('Displays passed object values, once each', () => {
   }
 })
 
-test.todo('Gives first item class "tile-title"')
+test('Gives first item class "tile-title"', () => {
+  render(<Tile display={mockData} />);
+  const expectedRender = screen.getByText(mockData[mockDataKeys[0]]);
+  expect(expectedRender).toHaveClass("tile-title");
+});
 
 test.todo('Gives non-first items class "tile"')
