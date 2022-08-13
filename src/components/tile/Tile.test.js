@@ -8,13 +8,13 @@ const mockData = {
   description: "Diplomatic meeting with the mock turles"
 }
 
-const mockDataKeys = mockData.keys();
+const mockDataKeys = Object.keys(mockData);
 
 test('Displays passed object values, once each', () => {
   render(<Tile display={mockData} />)
   for (let i = 0; i < mockDataKeys.length; i++) {
-    const expectedText = mockData.mockDataKeys[i]
-    expect(getbyText(expectedText)).toBe(true)
+    const expectedText = mockData[mockDataKeys[i]]; // Dot notation doesn't work here
+    expect(screen.getByText(expectedText)).toBeDefined();
   }
 })
 
