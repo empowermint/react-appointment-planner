@@ -13,6 +13,7 @@ test("Renders a form with onSubmit attribute set", () => {
 test("Renders three managed input elements", () => {
   const inputs = document.getElementsByTagName("input");
   expect(inputs.length).toBe(3);
+  // TODO: Test the inputs are managed
 });
 
 test.todo("Renders a submit button");
