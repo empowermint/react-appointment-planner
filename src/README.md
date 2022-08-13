@@ -40,10 +40,11 @@ Based on the given requirements, implement ContactsPage as a stateful component 
 Based on the given requirements, implement ContactForm as a stateless component that renders a web form to collect the necessary contact information.
 
 Render a form with:
+
 - The onSubmit attribute set
-- 3 controlled <input> elements, one for each piece of contact data
+- 3 controlled `<input>` elements, one for each piece of contact data
 - A submit button
-- Include a pattern attribute to the phone <input> with a regex that matches the phone locale of your preference
+- Include a pattern attribute to the phone `<input>` with a regex that matches the phone locale of your preference
 
 ### TileList Requirements
 
@@ -57,9 +58,9 @@ Based on the given requirements, implement TileList as a stateless component tha
 
 - Receive one prop:
   - An object
-- Iterate over the values in the object, passed in via props, and render a <p> element for each value
-- Give a className of "tile-title" to the first <p> element
-- Give a className of "tile" to all other <p> elements
+- Iterate over the values in the object, passed in via props, and render a `<p>` element for each value
+- Give a className of "tile-title" to the first `<p>` element
+- Give a className of "tile" to all other `<p>` elements
 
 ### AppointmentsPage Requirements
 
