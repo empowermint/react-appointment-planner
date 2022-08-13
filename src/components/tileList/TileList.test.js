@@ -8,7 +8,7 @@ const mockData = [
   {title: "Dinner", description: "Turtle soup on the menu?"}
 ]
 
-test("Renders an list item for each object in recieved array", () => {
+test("Renders a list item for each object in recieved array", () => {
   render(<TileList display={mockData} />);
   const tiles = document.getElementsByTagName("li");
   expect(tiles.length).toEqual(mockData.length);
