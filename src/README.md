@@ -46,7 +46,7 @@ Render a form with:
 - A submit button
 - Include a pattern attribute to the phone `<input>` with a regex that matches the phone locale of your preference
 
-### TileList Requirements
+### TileList Requirements (Implemented 2022.08.13)
 
 Based on the given requirements, implement TileList as a stateless component that renders a list of Tile components using an array of objects.
 
