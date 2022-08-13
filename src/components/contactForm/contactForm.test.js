@@ -6,11 +6,14 @@ beforeEach(() => render(<ContactForm />));
 test("Renders a form with onSubmit attribute set", () => {
   const forms = document.getElementsByTagName("form");
   expect(forms.length).toBe(1);
-  const onSubmit = forms[0].getAttribute("onSubmit");
-  expect(onSubmit).toBeDefined;
+  const expectedAttribute = forms[0].getAttribute("onSubmit");
+  expect(expectedAttribute).toBeDefined();
 });
 
-test.todo("Renders three managed input elements");
+test("Renders three managed input elements", () => {
+  const inputs = document.getElementsByTagName("input");
+  expect(inputs.length).toBe(3);
+});
 
 test.todo("Renders a submit button");
 
