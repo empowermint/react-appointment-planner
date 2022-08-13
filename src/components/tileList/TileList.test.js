@@ -8,10 +8,16 @@ const mockData = [
   {title: "Dinner", description: "Turtle soup on the menu?"}
 ]
 
-test("Renders a Tile component for each object in recieved array", () => {
+test("Renders an list item for each object in recieved array", () => {
   render(<TileList display={mockData} />);
   const tiles = document.getElementsByTagName("li");
   expect(tiles.length).toEqual(mockData.length);
 });
 
-test.todo("Passes each object to child Tile component as 'display' prop");
+test("Passes each object to child Tile component as 'display' prop", () => {
+  render(<TileList display={mockData} />);
+  for (let i = 0; i < mockData.length; i++) {
+    const title = mockData[i].title;
+    expect(screen.getByText(title)).toBeDefined(); // TODO: Stop this test being dependent on <Tile>
+  }
+});
