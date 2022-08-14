@@ -10,7 +10,7 @@ export const ContactForm = ({
   handleSubmit
 }) => {
   return (
-    <form onSubmit={handleSubmit}> 
+    <form name="contact form" onSubmit={handleSubmit}> 
       <label>Name: 
         <input type="text" name="name" value={name}
           onChange={setName}
