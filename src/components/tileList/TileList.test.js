@@ -3,12 +3,12 @@ import "@testing-library/jest-dom";
 import { TileList } from "./TileList";
 
 const mockData = [
-  {title: "Mock Turtles", description: "Summit meeting with the mock turles"},
+  {title: "Mock Turtles", description: "Summit meeting with the mock turtles"},
   {title: "Therapy", description: "Will surely be required after meeting mock turtles"},
   {title: "Dinner", description: "Turtle soup on the menu?"}
 ]
 
-test("Renders a list item for each object in recieved array", () => {
+test("Renders a list item for each object in received array", () => {
   render(<TileList display={mockData} />);
   const tiles = document.getElementsByTagName("li");
   expect(tiles.length).toEqual(mockData.length);
