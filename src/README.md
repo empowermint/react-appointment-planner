@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a challenege project from CodeCademy's Front End Engineer career path.
+This is a challenge project from CodeCademy's Front End Engineer career path.
 
 The starter code provided styles and sets up a tree of components. My task was to implement functionality using the following requirements:
 

@@ -6,7 +6,7 @@ const mockData = {
   title: "Mock Appointment",
   date: "1st January 1970",
   time: "6am",
-  description: "Diplomatic meeting with the mock turles"
+  description: "Diplomatic meeting with the mock turtles"
 }
 
 const mockDataKeys = Object.keys(mockData);
