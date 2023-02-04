@@ -90,7 +90,7 @@ Based on the given requirements, implement AppointmentForm as a stateless compon
   - A submit button
 - Use getTodayString() to set the min attribute of the date input
 
-### ContactPicker Requirements
+### ContactPicker Requirements (Implemented 2023.01.04)
 
 Based on the given requirements, implement ContactPicker as a stateless component that renders a drop-down list of all contact names.
 
