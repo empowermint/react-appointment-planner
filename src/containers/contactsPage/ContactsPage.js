@@ -23,9 +23,9 @@ export const ContactsPage = ({ contacts, addContact }) => {
       <section>
         <h2>Add Contact</h2>
         <ContactForm
-          name={currentName} setName={setName}
-          phone={currentPhone} setPhone={setPhone}
-          email={currentEmail} setEmail={setEmail}
+          name={currentName} setName={(e) => setName(e.target.value)}
+          phone={currentPhone} setPhone={(e) => setPhone(e.target.value)}
+          email={currentEmail} setEmail={(e) => setEmail(e.target.value)}
           handleSubmit={handleSubmit}
           />
       </section>

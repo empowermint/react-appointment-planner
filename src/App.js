@@ -14,11 +14,11 @@ function App() {
   };
 
   function addContact(name, phone, email) {
-    setContacts([...contacts, { "name": name, "phone": phone, "email": email }])
+    setContacts([{ "name": name, "phone": phone, "email": email }, ...contacts])
   }
 
   function addAppointment(title, contact, date, time) {
-    setAppointments([...appointments, { "title": title, "contact": contact, "date": date, "time": time }])
+    setAppointments([{ "title": title, "contact": contact, "date": date, "time": time }, ...appointments])
   }
 
   return (
