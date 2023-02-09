@@ -12,10 +12,7 @@ export const AppointmentsPage = ({appointments, contacts, addAppointment}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addAppointment(title, contact, date, time);
-    setTitle("");
-    setContact("");
-    setDate("");
-    setTime("");
+    e.target.reset();
   };
 
   return (

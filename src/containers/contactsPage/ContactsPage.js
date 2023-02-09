@@ -13,9 +13,7 @@ export const ContactsPage = ({ contacts, addContact }) => {
     e.preventDefault();
     if (existingContactNames.includes(currentName)) return;
     addContact(currentName, currentPhone, currentEmail);
-    setName("");
-    setPhone("");
-    setEmail("");
+    e.target.reset();
   };
 
   return (
