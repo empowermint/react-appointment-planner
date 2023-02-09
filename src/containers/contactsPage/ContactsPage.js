@@ -1,32 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
 
-export const ContactsPage = () => {
-  /*
-  Define state variables for 
-  contact info and duplicate check
-  */
+import ContactForm from "../../components/contactForm/ContactForm";
+import { TileList } from "../../components/tileList/TileList";
+
+export const ContactsPage = ({ contacts, addContact}) => {
+  const [currentName, setName] = useState("");
+  const [currentPhone, setPhone] = useState("");
+  const [currentEmail, setEmail] =  useState("");
+  const existingContactNames = contacts.map(contact => contact.name);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    /*
-    Add contact info and clear data
-    if the contact name is not a duplicate
-    */
+    if (existingContactNames.includes(currentName)) return;
+    addContact(currentName, currentPhone, currentEmail);
+    setName("");
+    setPhone("");
+    setEmail("");
   };
-
-  /*
-  Using hooks, check for contact name in the 
-  contacts array variable in props
-  */
 
   return (
     <div>
       <section>
-        <h2>Add Contact</h2> 
+        <h2>Add Contact</h2>
+        <ContactForm
+          name={currentName} setName={setName}
+          phone={currentPhone} setPhone={setPhone}
+          email={currentEmail} setEmail={setEmail}
+          handleSubmit={handleSubmit}
+          />
       </section>
       <hr />
       <section>
         <h2>Contacts</h2>
+        <TileList display={contacts} />
       </section>
     </div>
   );
