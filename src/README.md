@@ -62,7 +62,7 @@ Based on the given requirements, implement TileList as a stateless component tha
 - Give a className of "tile-title" to the first `<p>` element
 - Give a className of "tile" to all other `<p>` elements
 
-### AppointmentsPage Requirements
+### AppointmentsPage Requirements (Implemented 2023.02.09)
 
 Based on the given requirements, implement AppointmentsPage as a stateful component that handles the logic for adding new appointments and listing current appointments.
 
