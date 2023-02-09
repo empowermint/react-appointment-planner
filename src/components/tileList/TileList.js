@@ -14,3 +14,5 @@ export const TileList = ({ display }) => {
     </ul>
   );
 };
+
+export default TileList;

@@ -30,3 +30,5 @@ export const AppointmentForm = ({
     </form>
   );
 };
+
+export default AppointmentForm;

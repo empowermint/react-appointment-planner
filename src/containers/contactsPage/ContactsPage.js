@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 
-import ContactForm from "../../components/contactForm/ContactForm";
+import { ContactForm }  from "../../components/contactForm/ContactForm";
 import { TileList } from "../../components/tileList/TileList";
 
-export const ContactsPage = ({ contacts, addContact}) => {
+export const ContactsPage = ({ contacts, addContact }) => {
   const [currentName, setName] = useState("");
   const [currentPhone, setPhone] = useState("");
   const [currentEmail, setEmail] =  useState("");
@@ -37,3 +37,5 @@ export const ContactsPage = ({ contacts, addContact}) => {
     </div>
   );
 };
+
+export default ContactsPage;
