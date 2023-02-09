@@ -4,7 +4,7 @@
 
 This is a challenge project from CodeCademy's Front End Engineer career path.
 
-The starter code provided styles and sets up a tree of components. My task was to implement functionality using the following requirements:
+The starter code provided styles and set up the tree of components. My task was to implement functionality using the requirements listed below:
 
 ## Requirements
 
@@ -100,3 +100,9 @@ Based on the given requirements, implement ContactPicker as a stateless componen
 - Render a select element with the onChange attribute set to the callback passed in via props
 - Have a default first option element that indicates no contact is selected
 - Iteratively add option elements using the contact names from the array passed in via props
+
+## Ideas for further improvements
+
+- Full RTL unit and integration testing
+- The form validation could be improved with more detailed checks and helpful error messages on invalid form submission
+- Ability to edit and/or remove appointments and contacts once they have been submitted
