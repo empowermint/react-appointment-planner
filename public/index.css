@@ -1,6 +1,8 @@
 #root {
   padding: 30px;
   font-family: "Open Sans", sans-serif;
+  max-width: 40rem;
+  margin: auto;
 }
 
 nav > a {
