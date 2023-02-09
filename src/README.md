@@ -8,7 +8,7 @@ The starter code provided styles and sets up a tree of components. My task was t
 
 ## Requirements
 
-### App
+### App (Implemented 2023.02.09)
 
 Based on the given requirements, implement App as a stateful component that maintains appointments and contacts. It should also pass those values, along with callback functions to update those state values, to its child components.
 
