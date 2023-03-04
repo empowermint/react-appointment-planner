@@ -3,4 +3,4 @@ import "@testing-library/jest-dom"
 
 import { AppointmentsPage } from "./AppointmentsPage"
 
-test("", () => { })
+test(" ", () => { })
