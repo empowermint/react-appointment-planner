@@ -4,7 +4,15 @@
 
 This is a challenge project from CodeCademy's Front End Engineer career path.
 
-The starter code provided styles and set up the tree of components. My task was to implement functionality using the requirements listed below:
+The starter code provided styles and set up the tree of components. My task was to implement functionality using the requirements listed below.
+
+### Test-driven Approach
+
+I was fresh off the back of learning about unit testing and had discovered React Testing Library doing my own research, so I decided to implement the functionality using the test-driven development methodology and try out these ideas in practice.
+
+I found the TDD approach liberating as it enabled me to work on one component at a time and to be confident they were functioning as expected before the full framework of the application was in place to support them.
+
+Because it was easier to test, I started with the small, presentation components first and then worked my way up to the containers - this is the opposite of how I would have approached the project without TDD. I don't think this made the implementation harder or slower, but it meant the working product didn't emerge until the very final stages. From a project perspective, I think it would be better to use a more broad-strokes approach so that the product and its features can be evaluated and adjusted earlier in the process.
 
 ## Requirements
 
@@ -103,6 +111,6 @@ Based on the given requirements, implement ContactPicker as a stateless componen
 
 ## Ideas for further improvements
 
-- Full RTL unit and integration testing
+- Full RTL integration testing
 - The form validation could be improved with more detailed checks and helpful error messages on invalid form submission
 - Ability to edit and/or remove appointments and contacts once they have been submitted
