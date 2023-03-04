@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react"
 import "@testing-library/jest-dom"
 import { ContactPicker } from "./ContactPicker"
 
-const mockContacts = ["First Contact", "Another Contact", "Contact III"]
+const mockContacts = [{name: "First Contact"}, {name: "Another Contact"}, {name: "Contact III"}]
 const mockChangeHandler = () => {"Callback"}
 
 beforeEach(() => render(<ContactPicker contacts={mockContacts} onChange={mockChangeHandler} />))
